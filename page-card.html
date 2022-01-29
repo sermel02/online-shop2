@@ -51,7 +51,7 @@
 								<a class="nav-link" href="page-pay.html">Оплата</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Бронь стола</a>
+								<a class="nav-link" href="vacansy.html">Вакансии</a>
 							</li>
 						</ul>
 						<div class="menu-right d-flex">
@@ -167,7 +167,116 @@
 								<h2 class="title">
 									Отзывы
 								</h2>
-								
+								<!-- Swiper -->
+								<div class="revSlider">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="rev_header">
+												<div class="avatar">
+													<img src="img/page-card/avatar.png" alt="">
+												</div>
+												<div class="rev_avatar">
+													<div class="rev_name">
+														Анатолий Петров<img src="img/page-card/rev_ico.svg" alt="ICO">
+													</div>
+													<div class="rating">
+														<span class="active"></span>
+														<span class="active"></span>
+														<span class="active"></span>
+														<span class="active"></span>
+														<span class="active"></span>
+													</div>
+													<a href="#" class="rev_social">
+														vk.com/anatoliy
+													</a>
+												</div>
+											</div>
+											<div class="rev_footer">
+												<p>Заказал 5кг мяса, живу в Московской области. Как и обещал оператор, привезли через 1,5 часа. Свежее, как будто было живое еще по дороге. Действительно натуральные продукты. Я обязательно буду заказывать дальше. А теперь подробнее о плюсах и минусах всего магази...</p>
+												<a href="#">Читать полностью</a>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="rev_header">
+												<div class="avatar">
+													<img src="img/page-card/avatar.png" alt="">
+												</div>
+												<div class="rev_avatar">
+													<div class="rev_name">
+														Анатолий Петров<img src="img/page-card/rev_ico.svg" alt="ICO">
+													</div>
+													<div class="rating">
+														<span class="active"></span>
+														<span class="active"></span>
+														<span class="active"></span>
+														<span class="active"></span>
+														<span class="active"></span>
+													</div>
+													<a href="#" class="rev_social">
+														vk.com/anatoliy
+													</a>
+												</div>
+											</div>
+											<div class="rev_footer">
+												<p>Заказал 5кг мяса, живу в Московской области. Как и обещал оператор, привезли через 1,5 часа. Свежее, как будто было живое еще по дороге. Действительно натуральные продукты. Я обязательно буду заказывать дальше. А теперь подробнее о плюсах и минусах всего магази...</p>
+												<a href="#">Читать полностью</a>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="rev_header">
+												<div class="avatar">
+													<img src="img/page-card/avatar.png" alt="">
+												</div>
+												<div class="rev_avatar">
+													<div class="rev_name">
+														Анатолий Петров<img src="img/page-card/rev_ico.svg" alt="ICO">
+													</div>
+													<div class="rating">
+														<span class="active"></span>
+														<span class="active"></span>
+														<span class="active"></span>
+														<span class="active"></span>
+														<span class="active"></span>
+													</div>
+													<a href="#" class="rev_social">
+														vk.com/anatoliy
+													</a>
+												</div>
+											</div>
+											<div class="rev_footer">
+												<p>Заказал 5кг мяса, живу в Московской области. Как и обещал оператор, привезли через 1,5 часа. Свежее, как будто было живое еще по дороге. Действительно натуральные продукты. Я обязательно буду заказывать дальше. А теперь подробнее о плюсах и минусах всего магази...</p>
+												<a href="#">Читать полностью</a>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="rev_header">
+												<div class="avatar">
+													<img src="img/page-card/avatar.png" alt="">
+												</div>
+												<div class="rev_avatar">
+													<div class="rev_name">
+														Анатолий Петров<img src="img/page-card/rev_ico.svg" alt="ICO">
+													</div>
+													<div class="rating">
+														<span class="active"></span>
+														<span class="active"></span>
+														<span class="active"></span>
+														<span class="active"></span>
+														<span class="active"></span>
+													</div>
+													<a href="#" class="rev_social">
+														vk.com/anatoliy
+													</a>
+												</div>
+											</div>
+											<div class="rev_footer">
+												<p>Заказал 5кг мяса, живу в Московской области. Как и обещал оператор, привезли через 1,5 часа. Свежее, как будто было живое еще по дороге. Действительно натуральные продукты. Я обязательно буду заказывать дальше. А теперь подробнее о плюсах и минусах всего магази...</p>
+												<a href="#">Читать полностью</a>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-button-next">Еще<span><img src="img/page-content/next.svg" alt=""></span></div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -320,6 +429,16 @@
 			$(".nav-tabs a").click(function() {
 				$(this).tab('show');
 			});
+		});
+
+		//Reviews Slider
+		var swiper = new Swiper(".revSlider", {
+			slidesPerView: 2,
+			spaceBetween: 30,
+			//slidesPerGroup: 2,
+			navigation: {
+				nextEl: ".swiper-button-next",
+			},
 		});
 
 	</script>

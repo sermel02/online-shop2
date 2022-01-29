@@ -110,7 +110,7 @@ header .menu-right .menu-user button {
   padding-top: 60px;
 }
 .home-banner .block {
-  background-color: #EBEBF5;
+  background-color: #f0f0fa;
   background-image: url(../img/home-banner/banner1.png);
   background-repeat: no-repeat;
   background-position: top right;
@@ -518,6 +518,27 @@ footer .footer_bottom a {
   color: #828282;
   margin-bottom: 25px;
 }
+.page-content .vac-block {
+  margin-top: 46px;
+}
+.page-content .vac-block h4 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 25px;
+}
+.page-content .vac-block p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #828282;
+}
+.page-content .vac-block p span {
+  color: black;
+}
 .page-content .href {
   margin-top: 48px;
 }
@@ -763,6 +784,115 @@ footer .footer_bottom a {
   line-height: 19px;
   color: #828282;
   padding-right: 35px;
+}
+.card-info .card-bottom .card-desc .tab-content .tab-pane .revSlider {
+  position: relative;
+  overflow: hidden;
+  padding-right: 77px;
+}
+.card-info .card-bottom .card-desc .tab-content .tab-pane .revSlider:before {
+  width: 77px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: '';
+  background: white;
+  z-index: 9;
+}
+.card-info .card-bottom .card-desc .tab-content .tab-pane .revSlider .swiper-button-next {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 12px;
+  color: #00AC4E;
+}
+.card-info .card-bottom .card-desc .tab-content .tab-pane .revSlider .swiper-button-next:after {
+  content: '';
+}
+.card-info .card-bottom .card-desc .tab-content .tab-pane .revSlider .swiper-button-next span {
+  margin-right: 7px;
+  margin-left: 5px;
+}
+.card-info .card-bottom .card-desc .tab-content .tab-pane .revSlider .swiper-wrapper {
+  justify-content: flex-start;
+}
+.card-info .card-bottom .card-desc .tab-content .tab-pane .revSlider .swiper-wrapper .swiper-slide {
+  background: #F2F2F2;
+  border-radius: 12px;
+  padding: 15px;
+}
+.card-info .card-bottom .card-desc .tab-content .tab-pane .revSlider .swiper-wrapper .swiper-slide .rev_header {
+  display: flex;
+  margin-bottom: 10px;
+}
+.card-info .card-bottom .card-desc .tab-content .tab-pane .revSlider .swiper-wrapper .swiper-slide .rev_header .avatar {
+  width: 38px;
+  height: 38px;
+  margin-right: 9px;
+}
+.card-info .card-bottom .card-desc .tab-content .tab-pane .revSlider .swiper-wrapper .swiper-slide .rev_header .avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.card-info .card-bottom .card-desc .tab-content .tab-pane .revSlider .swiper-wrapper .swiper-slide .rev_header .rev_avatar {
+  display: flex;
+  flex-direction: column;
+}
+.card-info .card-bottom .card-desc .tab-content .tab-pane .revSlider .swiper-wrapper .swiper-slide .rev_header .rev_avatar .rev_name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 13px;
+  color: #000000;
+  margin-bottom: 7px;
+}
+.card-info .card-bottom .card-desc .tab-content .tab-pane .revSlider .swiper-wrapper .swiper-slide .rev_header .rev_avatar .rev_name img {
+  width: 20px;
+  height: 20px;
+  margin-left: 7px;
+}
+.card-info .card-bottom .card-desc .tab-content .tab-pane .revSlider .swiper-wrapper .swiper-slide .rev_header .rev_avatar .rating {
+  margin-bottom: 4px;
+  display: flex;
+}
+.card-info .card-bottom .card-desc .tab-content .tab-pane .revSlider .swiper-wrapper .swiper-slide .rev_header .rev_avatar .rating span {
+  background: url(../img/home-products/star.svg);
+  height: 11px;
+  width: 11px;
+  cursor: pointer;
+  background-size: cover;
+  margin-right: 3px;
+}
+.card-info .card-bottom .card-desc .tab-content .tab-pane .revSlider .swiper-wrapper .swiper-slide .rev_header .rev_avatar .rating span.active {
+  background: url(../img/home-products/star-green.svg);
+  background-size: cover;
+}
+.card-info .card-bottom .card-desc .tab-content .tab-pane .revSlider .swiper-wrapper .swiper-slide .rev_header .rev_avatar .rev_social {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 11px;
+  text-decoration-line: underline;
+  color: #2D9CDB;
+}
+.card-info .card-bottom .card-desc .tab-content .tab-pane .revSlider .swiper-wrapper .swiper-slide .rev_footer p {
+  font-family: TT Norms Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 17px;
+  color: #000000;
+  margin-bottom: 1px;
+}
+.card-info .card-bottom .card-desc .tab-content .tab-pane .revSlider .swiper-wrapper .swiper-slide .rev_footer a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 9px;
+  text-decoration-line: underline;
+  color: #00AC4E;
 }
 .card-info .card-bottom .card-sidebar {
   width: 30%;
