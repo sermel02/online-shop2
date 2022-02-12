@@ -1329,10 +1329,12 @@ footer .footer_bottom a {
   color: #FFFFFF;
   margin-left: 18px;
 }
+.order {
+  padding: 40px 0 60px;
+}
 .order .order-main {
   display: flex;
   justify-content: space-between;
-  padding: 40px 0 60px;
 }
 .order .order-main .order-left {
   width: 50%;
@@ -1424,55 +1426,6 @@ footer .footer_bottom a {
   line-height: 24px;
   color: #000000;
 }
-.order .order-main .order-left .nav-pills {
-  margin-top: 160px;
-}
-.order .order-main .order-left .nav-pills .nav-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.order .order-main .order-left .nav-pills .nav-item .nav-link {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14.6903px;
-  line-height: 11px;
-  color: #828282;
-}
-.order .order-main .order-left .nav-pills .nav-item .nav-link.active {
-  background: #00AC4E;
-  border-radius: 9.59274px;
-  color: #FFFFFF;
-  padding: 10px 25px;
-}
-.order .order-main .order-left .to-pay {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 465.68px;
-  height: 126.34px;
-  padding: 30px 38px;
-  background: #FFFFFF;
-  box-shadow: 0px 0px 28.763px rgba(0, 0, 0, 0.06);
-  border-radius: 9.58767px;
-}
-.order .order-main .order-left .to-pay .pay-row {
-  display: flex;
-  justify-content: space-between;
-}
-.order .order-main .order-left .to-pay .pay-row span {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 13.0516px;
-  line-height: 20px;
-  color: #000000;
-}
-.order .order-main .order-left .to-pay .pay-row span.green {
-  color: #00AC4E;
-}
-.order .order-main .order-left .to-pay .pay-row span.b {
-  font-size: 19.1753px;
-}
 .order .order-main .order-right {
   width: 50%;
   margin-left: 45px;
@@ -1511,7 +1464,65 @@ footer .footer_bottom a {
   background: none;
   display: block;
 }
-.order .order-main .order-right .order-form form .form-group .bttn_green {
+.order .order-bottom {
+  margin-top: -100px;
+  display: flex;
+}
+.order .order-bottom .order-del {
+  display: inline;
+}
+.order .order-bottom .order-del .nav-pills .nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.order .order-bottom .order-del .nav-pills .nav-item .nav-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14.6903px;
+  line-height: 11px;
+  color: #828282;
+}
+.order .order-bottom .order-del .nav-pills .nav-item .nav-link.active {
+  background: #00AC4E;
+  border-radius: 9.59274px;
+  color: #FFFFFF;
+  padding: 10px 25px;
+}
+.order .order-bottom .order-del .to-pay {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 465.68px;
+  height: 126.34px;
+  padding: 30px 38px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 28.763px rgba(0, 0, 0, 0.06);
+  border-radius: 9.58767px;
+}
+.order .order-bottom .order-del .to-pay .pay-row {
+  display: flex;
+  justify-content: space-between;
+}
+.order .order-bottom .order-del .to-pay .pay-row span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13.0516px;
+  line-height: 20px;
+  color: #000000;
+}
+.order .order-bottom .order-del .to-pay .pay-row span.green {
+  color: #00AC4E;
+}
+.order .order-bottom .order-del .to-pay .pay-row span.b {
+  font-size: 19.1753px;
+}
+.order .order-bottom .order-button {
+  display: inline-block;
+  margin-left: 113px;
+  margin-top: auto;
+}
+.order .order-bottom .order-button .bttn_green {
   font-size: 16px;
   margin-top: 10px;
   width: 183px;
