@@ -4,6 +4,12 @@ body {
   font-size: 16px;
   color: black;
 }
+*:focus {
+  outline-offset: 0px;
+}
+*:focus-within {
+  outline-offset: 0px;
+}
 .bttn_green {
   width: 167.15px;
   height: 53px;
@@ -576,7 +582,7 @@ footer .footer_bottom a {
   border-radius: 5px;
   resize: none;
   border: none;
-  padding: 20px;
+  padding: 20px !important;
 }
 .card-info {
   padding: 60px 0 0;
@@ -1308,6 +1314,7 @@ footer .footer_bottom a {
   font-size: 14px;
   line-height: 21px;
   color: #C6C6C6;
+  padding: 13px 8px;
 }
 .cart .cart-bottom .promo .block .bttn_green {
   width: 140px;
@@ -1336,6 +1343,7 @@ footer .footer_bottom a {
   font-size: 28px;
   line-height: 50px;
   color: #333333;
+  margin-bottom: 24px;
 }
 .order .order-main .order-left .title2 {
   font-style: normal;
@@ -1343,6 +1351,7 @@ footer .footer_bottom a {
   font-size: 26px;
   line-height: 20px;
   color: #000000;
+  margin-bottom: 16px;
 }
 .order .order-main .order-left .order-products .product {
   display: flex;
@@ -1356,8 +1365,8 @@ footer .footer_bottom a {
   cursor: pointer;
 }
 .order .order-main .order-left .order-products .product .green-block {
-  width: 111px;
-  height: 82px;
+  width: 77px;
+  height: 57px;
   background: #00AC4E;
   border-radius: 5px;
 }
@@ -1415,13 +1424,96 @@ footer .footer_bottom a {
   line-height: 24px;
   color: #000000;
 }
+.order .order-main .order-left .nav-pills {
+  margin-top: 160px;
+}
+.order .order-main .order-left .nav-pills .nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.order .order-main .order-left .nav-pills .nav-item .nav-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14.6903px;
+  line-height: 11px;
+  color: #828282;
+}
+.order .order-main .order-left .nav-pills .nav-item .nav-link.active {
+  background: #00AC4E;
+  border-radius: 9.59274px;
+  color: #FFFFFF;
+  padding: 10px 25px;
+}
+.order .order-main .order-left .to-pay {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 465.68px;
+  height: 126.34px;
+  padding: 30px 38px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 28.763px rgba(0, 0, 0, 0.06);
+  border-radius: 9.58767px;
+}
+.order .order-main .order-left .to-pay .pay-row {
+  display: flex;
+  justify-content: space-between;
+}
+.order .order-main .order-left .to-pay .pay-row span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13.0516px;
+  line-height: 20px;
+  color: #000000;
+}
+.order .order-main .order-left .to-pay .pay-row span.green {
+  color: #00AC4E;
+}
+.order .order-main .order-left .to-pay .pay-row span.b {
+  font-size: 19.1753px;
+}
 .order .order-main .order-right {
   width: 50%;
   margin-left: 45px;
 }
 .order .order-main .order-right .order-form form .form-group input {
+  width: 451px;
+  height: 64.02px;
   background: #FCFCFC;
   border: 1.1194px solid #EBEBEB;
   box-sizing: border-box;
   border-radius: 7.11356px;
+  margin-bottom: 18px;
+  padding: 20px 0 20px 30px;
+  margin-top: -5px;
+}
+.order .order-main .order-right .order-form form .form-group input::-webkit-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15.6716px;
+  line-height: 24px;
+  color: #C6C6C6;
+}
+.order .order-main .order-right .order-form form .form-group input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+.order .order-main .order-right .order-form form .form-group .form-control:focus {
+  box-shadow: none;
+}
+.order .order-main .order-right .order-form form .form-group .add_com {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17.0726px;
+  line-height: 24px;
+  color: #00AC4E;
+  border: none;
+  background: none;
+  display: block;
+}
+.order .order-main .order-right .order-form form .form-group .bttn_green {
+  font-size: 16px;
+  margin-top: 10px;
+  width: 183px;
+  height: 58px;
 }

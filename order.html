@@ -116,15 +116,96 @@
 								<span class="num">350 ₽</span>
 							</div>
 						</div>
+						<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" onclick="mT2()" aria-controls="pills-home" aria-selected="true">Доставка</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" onclick="mT()" aria-controls="pills-profile" aria-selected="false">Самовывоз (- 20%)</a>
+							</li>
+						</ul>
+						<div class="to-pay">
+							<div class="pay-row">
+								<span>Итого</span>
+								<span style="margin-left: 43px;">700 ₽ </span>
+								<span>Итого к оплате</span>
+							</div>
+							<div class="pay-row">
+								<span>Доставка</span>
+								<span class="green">0 ₽</span>
+								<span class="b">700 ₽</span>
+							</div>
+						</div>
 					</div>
 					<div class="order-right">
 						<div class="order-form">
-							<form>
-								<div class="form-group">
-									<label for="formGroupExampleInput">Район доставки</label>
-									<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+							<div class="tab-content" id="pills-tabContent">
+								<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+									<form>
+										<div class="form-group">
+											<label for="formGroupExampleInput">Район доставки</label>
+											<input list="browsers" type="text" class="form-control" id="formGroupExampleInput" placeholder="Выбрать">
+											<datalist id="browsers">
+												<option value="Район">
+												<option value="Район2">
+												<option value="Район3">
+												<option value="Район4">
+											</datalist>
+
+											<label for="formGroupExampleInput">ФИО</label>
+											<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите Ваше полное имя">
+
+											<label for="formGroupExampleInput">Телефон</label>
+											<input type="text" class="form-control" id="formGroupExampleInput" placeholder="+380">
+
+											<label for="formGroupExampleInput">Адрес доставки</label>
+											<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите адрес доставки">
+
+											<label for="formGroupExampleInput">Способ оплаты</label>
+											<input list="pay" type="text" class="form-control" id="formGroupExampleInput" placeholder="Выбрать">
+											<datalist id="pay">
+												<option value="Наличные">
+												<option value="Карта">
+											</datalist>
+
+											<button type="button" class="add_com" id="add_com" onclick="addCom()">Добавить комментарий.</button>
+											<div style="display: none" id="div1">
+												<label for="formGroupExampleInput">Комментарий к заказу</label>
+												<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите ваш комментарий...">
+											</div>
+
+											<button class="bttn_green">Оформить заказ</button>
+										</div>
+									</form>
 								</div>
-							</form>
+								<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+									<form>
+										<div class="form-group">
+
+											<div style="visibility: hidden">
+												<label for="formGroupExampleInput">ФИО</label>
+												<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите Ваше полное имя">
+											</div>
+
+											<label for="formGroupExampleInput">ФИО</label>
+											<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Введите Ваше полное имя">
+
+											<label for="formGroupExampleInput">Телефон</label>
+											<input type="text" class="form-control" id="formGroupExampleInput" placeholder="+380">
+
+											<label for="formGroupExampleInput">Когда заберете?</label>
+											<input list="time" type="text" class="form-control" id="formGroupExampleInput" placeholder="В ближайшее время">
+											<datalist id="time">
+												<option value="В ближайшее время">
+												<option value="Через час">
+											</datalist>
+
+											<button class="bttn_green">Оформить заказ</button>
+										</div>
+									</form>
+								</div>
+							</div>
+
 						</div>
 					</div>
 				</div>
@@ -280,6 +361,21 @@
 				nextEl: ".swiper-button-next",
 			},
 		});
+
+		//Ordercom
+		function addCom() {
+			document.getElementById("div1").style.display = "block";
+			document.getElementById("add_com").style.display = "none";
+			document.getElementById("pills-tab").style.marginTop = "195px";
+		};
+
+		function mT() {
+			document.getElementById("pills-tab").style.marginTop = "31px";
+		};
+
+		function mT2() {
+			document.getElementById("pills-tab").style.marginTop = "154px";
+		}
 
 	</script>
 </body>
