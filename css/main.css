@@ -10,6 +10,10 @@ body {
 *:focus-within {
   outline-offset: 0px;
 }
+input:focus {
+  border-color: none;
+  box-shadow: none !important;
+}
 .bttn_green {
   width: 167.15px;
   height: 53px;
@@ -1527,4 +1531,166 @@ footer .footer_bottom a {
   margin-top: 10px;
   width: 183px;
   height: 58px;
+}
+.profile {
+  padding: 60px 0;
+}
+.profile .nav-tabs {
+  border-bottom: 0px solid #dee2e6;
+}
+.profile .nav-tabs .nav-item .nav-link {
+  padding: 0 0 14px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 138.73px;
+  height: 109px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14.2907px;
+  line-height: 21px;
+  text-align: center;
+  color: #00AC4E;
+}
+.profile .nav-tabs .nav-item .nav-link.prfData {
+  background-image: url(../img/profile/profile-data2.svg);
+  background-repeat: no-repeat;
+  background-position: top 12px center;
+}
+.profile .nav-tabs .nav-item .nav-link.active {
+  background-image: url(../img/profile/profile-data.svg);
+  background-repeat: no-repeat;
+  background-position: top 12px center;
+  background-color: #00AC4E;
+  border-radius: 15.8545px;
+  color: #FFFFFF;
+}
+.profile .nav-tabs .nav-item .nav-link {
+  margin-bottom: 0px;
+  border: 0px solid transparent;
+  border-top-left-radius: 0rem;
+  border-top-right-radius: 0rem;
+}
+.profile .tab-content {
+  padding-top: 45px;
+}
+.profile .tab-content .tab-1 {
+  display: flex;
+  justify-content: space-between;
+}
+.profile .tab-content .tab-1 .title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 25px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+.profile .tab-content .tab-1 ::placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14.2715px;
+  line-height: 30px;
+  color: #C6C6C6;
+}
+.profile .tab-content .tab-1 .profile-left {
+  width: 50%;
+  margin-right: 60px;
+}
+.profile .tab-content .tab-1 .profile-left .profile-ico {
+  margin-bottom: 30px;
+}
+.profile .tab-content .tab-1 .profile-left .profile-ico .block {
+  display: flex;
+  align-items: center;
+}
+.profile .tab-content .tab-1 .profile-left .profile-ico .block .ico {
+  width: 75px;
+  height: 75px;
+  display: inline-block;
+  background: #00AC4E;
+  border-radius: 12px;
+  margin-right: 18px;
+}
+.profile .tab-content .tab-1 .profile-left .profile-ico .block span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 31px;
+  text-decoration-line: underline;
+  color: #00AC4E;
+  cursor: pointer;
+}
+.profile .tab-content .tab-1 .profile-left .profile-name .form-line {
+  display: flex;
+  justify-content: space-between;
+}
+.profile .tab-content .tab-1 .profile-left .profile-name .form-line .form-group {
+  width: 100%;
+  margin-right: 20px;
+}
+.profile .tab-content .tab-1 .profile-left .profile-name .form-line .form-group label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19.3529px;
+  line-height: 34px;
+  color: #000000;
+}
+.profile .tab-content .tab-1 .profile-left .profile-name .form-line .form-group input {
+  background: #FCFCFC;
+  border: 1.61275px solid #EBEBEB;
+  box-sizing: border-box;
+  border-radius: 8.06373px;
+  height: 51.61px;
+  width: 100%;
+}
+.profile .tab-content .tab-1 .profile-right {
+  width: 50%;
+}
+.profile .tab-content .tab-1 .profile-right title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 25px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+.profile .tab-content .tab-1 .profile-right .form-line .form-group label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17.2px;
+  line-height: 30px;
+  color: #000000;
+}
+.profile .tab-content .tab-1 .profile-right .form-line .form-group input {
+  background: #FCFCFC;
+  height: 46px;
+  border: 1.43333px solid #EBEBEB;
+  box-sizing: border-box;
+  border-radius: 7.16667px;
+}
+.profile .tab-content .tab-1 .profile-right .form-line .form-group .form-control:focus {
+  color: #495057;
+  background: #FCFCFC;
+  border: 1.43333px solid #EBEBEB;
+  outline: none;
+  box-shadow: none;
+}
+.profile .tab-content .tab-1 .profile-right .profile-phone {
+  margin-bottom: 10px;
+}
+.profile .tab-content .tab-1 .profile-right .profile-phone .form-line {
+  display: flex;
+  justify-content: space-between;
+}
+.profile .tab-content .tab-1 .profile-right .profile-phone .form-line .form-group {
+  margin-right: 28px;
+}
+.profile .tab-content .tab-1 .profile-right .profile-phone .form-line .form-group input {
+  width: 202px;
+}
+.profile .tab-content .tab-1 .profile-right .bttn_green {
+  width: 184px;
+  font-size: 12px;
+  margin-top: 10px;
 }

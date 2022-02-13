@@ -10,6 +10,12 @@ body {
 
 *:focus-within {
 	outline-offset: 0px;
+
+}
+
+input:focus {
+	border-color: none;
+	box-shadow: none !important;
 }
 
 .bttn_green {
@@ -1857,6 +1863,216 @@ footer {
 				margin-top: 10px;
 				width: 183px;
 				height: 58px;
+			}
+		}
+	}
+}
+
+.profile {
+	padding: 60px 0;
+
+	.nav-tabs {
+		border-bottom: 0px solid #dee2e6;
+
+		.nav-item {
+			.nav-link {
+				padding: 0 0 14px;
+				display: flex;
+				justify-content: center;
+				align-items: flex-end;
+				width: 138.73px;
+				height: 109px;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 14.2907px;
+				line-height: 21px;
+				text-align: center;
+				color: #00AC4E;
+
+				&.prfData {
+					background-image: url(../img/profile/profile-data2.svg);
+					background-repeat: no-repeat;
+					background-position: top 12px center;
+				}
+
+
+
+				&.active {
+					background-image: url(../img/profile/profile-data.svg);
+					background-repeat: no-repeat;
+					background-position: top 12px center;
+					background-color: #00AC4E;
+					border-radius: 15.8545px;
+					color: #FFFFFF;
+
+
+				}
+			}
+
+			.nav-link {
+				margin-bottom: 0px;
+				border: 0px solid transparent;
+				border-top-left-radius: 0rem;
+				border-top-right-radius: 0rem;
+			}
+		}
+	}
+
+	.tab-content {
+		padding-top: 45px;
+
+		.tab-1 {
+			display: flex;
+			justify-content: space-between;
+
+			.title {
+				font-style: normal;
+				font-weight: 500;
+				font-size: 28px;
+				line-height: 25px;
+				color: #000000;
+				margin-bottom: 30px;
+			}
+
+			::placeholder {
+				font-style: normal;
+				font-weight: normal;
+				font-size: 14.2715px;
+				line-height: 30px;
+
+				color: #C6C6C6;
+			}
+
+			.profile-left {
+				width: 50%;
+				margin-right: 60px;
+
+				.profile-ico {
+					margin-bottom: 30px;
+
+					.block {
+						display: flex;
+						align-items: center;
+
+						.ico {
+							width: 75px;
+							height: 75px;
+							display: inline-block;
+							background: #00AC4E;
+							border-radius: 12px;
+							margin-right: 18px;
+						}
+
+						span {
+							font-style: normal;
+							font-weight: 500;
+							font-size: 18px;
+							line-height: 31px;
+							text-decoration-line: underline;
+							color: #00AC4E;
+							cursor: pointer;
+						}
+					}
+				}
+
+				.profile-name {
+					.form-line {
+						display: flex;
+						justify-content: space-between;
+
+						.form-group {
+							width: 100%;
+							margin-right: 20px;
+
+							label {
+								font-style: normal;
+								font-weight: normal;
+								font-size: 19.3529px;
+								line-height: 34px;
+								color: #000000;
+							}
+
+							input {
+								background: #FCFCFC;
+								border: 1.61275px solid #EBEBEB;
+								box-sizing: border-box;
+								border-radius: 8.06373px;
+								height: 51.61px;
+								width: 100%;
+							}
+						}
+					}
+
+				}
+
+				.profile-email {}
+			}
+
+			.profile-right {
+				width: 50%;
+
+				title {
+					font-style: normal;
+					font-weight: 500;
+					font-size: 28px;
+					line-height: 25px;
+					color: #000000;
+					margin-bottom: 30px;
+				}
+
+				.form-line {
+					.form-group {
+						label {
+							font-style: normal;
+							font-weight: normal;
+							font-size: 17.2px;
+							line-height: 30px;
+							color: #000000;
+						}
+
+						input {
+							background: #FCFCFC;
+							height: 46px;
+							border: 1.43333px solid #EBEBEB;
+							box-sizing: border-box;
+							border-radius: 7.16667px;
+						}
+
+						.form-control:focus {
+							color: #495057;
+							background: #FCFCFC;
+							border: 1.43333px solid #EBEBEB;
+							outline: none;
+							box-shadow: none;
+						}
+					}
+				}
+
+				.profile-phone {
+					margin-bottom: 10px;
+
+					.form-line {
+
+						display: flex;
+						justify-content: space-between;
+
+						.form-group {
+							margin-right: 28px;
+
+							input {
+								width: 202px;
+							}
+						}
+					}
+
+
+				}
+
+				.bttn_green {
+					width: 184px;
+					font-size: 12px;
+					margin-top: 10px;
+				}
 			}
 		}
 	}
